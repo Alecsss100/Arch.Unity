@@ -5,7 +5,7 @@ using L;
 using UnityEngine;
 using VContainer;
 
-namespace Arch.Unity.Conversion
+namespace Arch.Unity.Conversion.Custom
 {
     [DefaultExecutionOrder(-100)]
     [DisallowMultipleComponent]

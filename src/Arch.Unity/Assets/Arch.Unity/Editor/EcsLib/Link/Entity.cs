@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using L;
 using UnityEngine;
-using VContainer;
 
 namespace Arch.Unity.Conversion.Custom
 {

@@ -14,6 +14,20 @@ namespace Arch.Unity.Conversion
             readonly List<ComponentType> componentTypes = new();
             readonly List<object> components = new();
 
+            public void AddComponent(Type type, object component)
+            {
+                if (type.IsValueType)
+                {
+                    componentTypes.Add(type);
+                }
+                else
+                {
+                    componentTypes.Add(component.GetType());
+                }
+
+                components.Add(component); // TODO: avoid boxing
+            }
+
             public void AddComponent<T>(T component)
             {
                 if (typeof(T).IsValueType)

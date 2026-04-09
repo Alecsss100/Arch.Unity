@@ -5,7 +5,7 @@ using Arch.Unity.Toolkit;
 
 namespace L.ECS
 {
-    class SystemGroup<T> : Group<T>
+    public class SystemGroup<T> : Group<T>
     {
         public SystemGroup(string name, World world, List<BaseSystem<World, SystemState>> systems) : base(name)
         {

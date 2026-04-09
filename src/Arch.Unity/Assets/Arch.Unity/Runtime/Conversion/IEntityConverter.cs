@@ -1,4 +1,5 @@
 using Arch.Core;
+using System;
 
 namespace Arch.Unity.Conversion
 {

@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using F.C;
 using L;
 using UnityEngine;
 using VContainer;
@@ -16,7 +15,6 @@ namespace Arch.Unity.Conversion.Custom
         [SerializeField] List<L.ECS.TypeField> aspects;
         [SerializeField] List<L.ECS.ComponentField> components;
 
-        [Inject] 
         void Awake()
         {
             var entity = EntityConversion.Convert(gameObject, options);
